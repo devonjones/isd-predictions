@@ -7,6 +7,8 @@
 
 ## Preparing data
 
+
+
 ## Docs
 
 To read more about Prophet, check out Prophet's [docs](facebook.github.io/prophet/docs/quick_start.html).
