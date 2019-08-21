@@ -20,11 +20,11 @@ def get_files(usaf, wban):
 	h = open(output_fn, "w")
 	sh.sort(
 		sh.cut(
-			sh.cut(
-				sh.grep(
+			sh.grep(
+				sh.cut(
 					sh.zcat(glob.glob("*.gz")),
-					"-v", "+9999"),
-				"--output-delimiter=,", "-c16-27,88-92"),
+					"--output-delimiter=,", "-c16-27,88-92"),
+				"-v", "\+9999"),
 			"--output-delimiter=.", "-c1-17,18"),
 		_out=h)
 	sh.gzip(output_fn)
