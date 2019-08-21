@@ -22,6 +22,7 @@ There's a python program included that will download data from noaa for you.  Th
     
     # Will download data for DIA from 1994 - 2019
     ./data_download.py 725650 03017
+    jupyter-notebook isd-predictions.ipynb
 ```
 
 ## Docs
